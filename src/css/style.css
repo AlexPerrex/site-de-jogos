@@ -5,9 +5,9 @@ html {
 .menu {
   font-family: "Pixelify Sans", sans-serif;
   display: grid;
-  background-color: black;
+  background: linear-gradient(150deg, #00d4ff 25% , #8b00ff 75%)no-repeat;
   border-bottom: 2px double lightskyblue;
-  color: white;
+  color: black;
   width: 100vw;
   height: 150px;
   margin: 0px;
@@ -19,7 +19,7 @@ html {
  nav a {
    font-size: 20px;
    text-decoration: none;
-   color:aqua;
+   color: black;
 }
 
 a:hover {
