@@ -1,11 +1,12 @@
 html {
+   width: 100%;
+   min-height: 100vh;
    background: linear-gradient(135deg, lightskyblue , #e6f7ff);
 }
 
 
 
 .menu {
-  font-family: "Pixelify Sans", sans-serif;
   display: grid;
   background: linear-gradient(150deg, #00d4ff 25% , #8b00ff 75%)no-repeat;
   border-bottom: 2px double lightskyblue;
@@ -17,10 +18,11 @@ html {
   box-sizing: border-box;
 }
 
+
 p {
   position: relative;
-  font-size: 26px;
-  left: 10px;
+  font-size: 24px;
+  padding-left: 10px;
 }
 
 
@@ -37,6 +39,9 @@ a:hover {
 }
 
 .pixelify-sans {
+  position: relative;
+  width: 500px;
+  left: 10px;
   font-family: "Orbitron", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -76,7 +81,6 @@ a:hover {
 
 .selecao {
   margin: 5px;
-  width: 100%;
   min-height: 100px;
   text-align: center;
 }
