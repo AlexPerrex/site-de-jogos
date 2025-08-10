@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,10 +9,11 @@
       href="./src/images/favicon.ico"
       type="image/x-icon"
     />
-    <title>Document</title>
+    <title>ExpGaming Room</title>
 
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsivo.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,7 +42,23 @@
         </figure>
       </section>
 
-      <article class="gradiente dir">
+      <div class="filtros">
+        <div class="categorias-jogos">
+          <label for="categoria">Categoria</label>
+          <select id="categoria" class="categoria">
+            <option value="">Selecione uma categoria</option>
+            <option value="metroidvania">Metroidvania</option>
+            <option value="soulslike">Soulslike</option>
+            <option value="rpg">RPG</option>
+            <option value="plataforma">Plataforma</option>
+            <option value="terror">Terror</option>
+          </select>
+        </div>
+        <button class="btn-filtrar ">Aplicar filtros</button>
+      </div>
+
+      <div class="jogos">
+      <article class="gradiente dir jogo" data-categoria="Metroidvania">
         <div>
           <img src="./src/images/blasphemous.png" /><a
             href="https://youtu.be/seGW4vdfL7A?si=93snXALmUISKrvmP"
@@ -71,7 +88,7 @@
         </div>
       </article>
 
-      <article class="gradiente esq">
+      <article class="gradiente esq jogo" data-categoria="Plataforma">
         <div>
           <img src="./src/images/inmost.png" /><a href="">Inmost</a>
           <p>
@@ -96,7 +113,7 @@
         </div>
       </article>
 
-      <article class="gradiente dir">
+      <article class="gradiente dir jogo" data-categoria="RPG">
         <div>
           <img src="./src/images/undertale.png" /><a href="">Undertale</a>
           <p>
@@ -120,7 +137,7 @@
         </div>
       </article>
 
-      <article class="gradiente esq">
+      <article class="gradiente esq jogo" data-categoria="Metroidvania">
         <div>
           <img src="./src/images/hollow.png" /><a href="">Hollow Knight</a>
 
@@ -147,7 +164,7 @@
         </div>
       </article>
 
-      <article class="gradiente dir">
+      <article class="gradiente dir jogo" data-categoria="RPG">
         <div>
           <img src="./src/images/expedition.jpg" /><a href=""
             >Clair Obscur: Expedition 33</a
@@ -173,7 +190,7 @@
         </div>
       </article>
 
-      <article class="gradiente esq">
+      <article class="gradiente esq jogo" data-categoria="Soulslike">
         <div>
           <img src="./src/images/elden.jpg" /><a href="">Elden Ring</a>
 
@@ -201,7 +218,7 @@
         </div>
       </article>
 
-      <article class="gradiente dir">
+      <article class="gradiente dir jogo" data-categoria="Terror">
         <div>
           <img src="./src/images/frame.jpg" /><a href=""
             >Fatal Frame: Maiden Of Black Water</a
@@ -228,11 +245,14 @@
           ></iframe>
         </div>
       </article>
+      </div>
     </main>
 
     <footer>
       <p>&copy; 2025 - Responsivo Design</p>
       <img src="./src/images/responsive.png" alt="logo do rodapé do site" />
     </footer>
+
+    <script src="./src/js/index.js"></script>
   </body>
 </html>
