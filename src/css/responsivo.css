@@ -20,27 +20,18 @@
     display: inline-block;
   }
 
-  /* .filtros {
-    position: relative;
-    height: 20vh;
-  } */
-  
-/*   .categorias-jogos {
-    position: relative;
-    right: -50%;
-    transform: translateX(-50%); ;
-    width: 60vw;
-    margin: 20px;
+  .gradiente {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 20px auto;
   }
-  .filtros button {
-    position: relative;
-    top: 20%;
-    right: 50%;
-    transform: translateY(-100%);
-    transform: translateX(50%);
-    width: 40vw;
-    height: 5vh;
-  } */
+
+  .gradiente iframe {
+    width: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   .filtros {
     display: flex;
@@ -56,4 +47,18 @@
     height: 5vh;
     letter-spacing: 2px;
   }
+
+  .container-noticias {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 700px;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .container-noticias h3 {
+    margin: auto;
+  }
+
 }

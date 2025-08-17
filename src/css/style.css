@@ -30,12 +30,11 @@ nav a {
   font-size: 20px;
   text-decoration: none;
   color: lightskyblue;
+  margin: 5px;
 }
 
-a:hover {
-  background-color: blue;
-  color: white;
-  border-radius: 10px;
+nav a:hover , aside a:hover {
+  border-bottom: 1px solid lightskyblue;
 }
 
 .orbitron {
@@ -96,29 +95,73 @@ a:hover {
   background-color: lightsteelblue;
 }
 
-.alinhamento li {
-  display: inline-block;
+.alinhamento-menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
   margin: 10px;
-  font-size: 20px;
+  font-size: 50px;
   list-style: none;
 }
 
-.gradiente {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 99%;
-  min-height: 100vh;
-  margin-bottom: 20px;
+.container-noticias {
+  position: sticky;
+  float: right;
+  top: 0;
+  right: 0;
+  padding-top: 3px;
+  width: 350px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid black;
   border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 2);
+}
+
+.sticky-aside {
   display: flex;
+  align-items: center;
+  position: sticky;
+  top: 10px;
+  background: lightblue;
+  padding: 2px;
+  border: 1px solid gray;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 2);
+}
+
+.container-noticias h3 {
+  letter-spacing: 3px;
+margin-bottom: 2px;
+  text-align: center;
+  color: #3c3c3c;
+  text-shadow: 2px 3px 1px #808b80;
+}
+
+.sticky-aside a {
+  font-family:'Poppins' ;
+  font-size: 15px;
+}
+
+.sticky-aside img {
+  width: 200px;
+  margin: auto;
+}
+
+.gradiente {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 70%;
+  min-height: 100vh;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
   color: lightsteelblue;
   font-size: 2rem;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 2);
-  transition: transform 0.3s;
 }
 
 .gradiente.dir {
@@ -167,6 +210,13 @@ a {
   color: white;
 }
 
+nav a:hover {
+  border-bottom: 2px solid white;
+  font-size: 35px;
+  transition: 0.2s linear;
+  padding-bottom: 2px;
+}
+
 .pixel-anim {
   animation: jump 1s steps(2) infinite;
 }
@@ -182,33 +232,6 @@ a {
   }
   75% {
     transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.logo {
-  animation: rotate 3s steps(2) infinite;
-}
-@keyframes rotate {
-  0% {
-    transform: rotateY(0);
-  }
-  12.5% {
-    transform: rotateY(15deg);
-  }
-  25% {
-    transform: rotateY(75deg);
-  }
-  50% {
-    transform: rotateY(150deg);
-  }
-  75% {
-    transform: rotateY(75deg);
-  }
-  87.5% {
-    transform: rotateY(15deg);
   }
   100% {
     transform: translateY(0);
@@ -239,7 +262,7 @@ footer {
 }
 footer img {
   width: 120px;
-  height: 120px;
+  height: 110px;
 }
 
 .esconder {

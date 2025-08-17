@@ -26,10 +26,10 @@
     <header class="menu">
       <h1 class="orbitron pixel-anim">ExpGaming Room</h1>
       <nav>
-        <ul class="alinhamento">
-          <li><a href="jogos">jogos</a></li>
-          <li><a href="categorias">categorias</a></li>
-          <li><a href="exp">exp</a></li>
+        <ul class="alinhamento-menu">
+          <li><a href="#jogos">jogos</a></li>
+          <li><a href="#categorias">categorias</a></li>
+          <li><a href="#noticias">notícias</a></li>
         </ul>
       </nav>
     </header>
@@ -52,199 +52,423 @@
             <option value="rpg">RPG</option>
             <option value="plataforma">Plataforma</option>
             <option value="terror">Terror</option>
+            <option value="luta">Luta</option>
+            <option value="hacknslash">Hack n slash</option>
           </select>
         </div>
-        <button class="btn-filtrar ">Aplicar filtros</button>
+        <button class="btn-filtrar">Aplicar filtros</button>
       </div>
 
       <div class="jogos">
-      <article class="gradiente dir jogo" data-categoria="Metroidvania">
-        <div>
-          <img src="./src/images/blasphemous.png" /><a
-            href="https://youtu.be/seGW4vdfL7A?si=93snXALmUISKrvmP"
-            target="_blank"
-            >Blasphemous</a
-          >
-          <p>
-            Blasphemous é um jogo de ação e aventura com elementos de
-            Metroidvania, ambientado no mundo sombrio e cruel de Cvstodia, onde
-            o "Milagre", uma força divina, manifesta-se de maneiras tanto
-            bênçãos quanto maldições. O jogador assume o papel do Penitente, o
-            único sobrevivente de um massacre, que desperta em um ciclo de morte
-            e renascimento, e deve embarcar em uma jornada para libertar o mundo
-            desse terrível destino.
-          </p>
+        <section class="container-noticias" id="noticias">
+          <h3><em>Notícias</em></h3>
+          <aside class="sticky-aside">
+            <img src="./src/images/uol.png" alt="site uol" />
+            <a href="https://folha.com/501g8xu4"
+              >Conheça seis jogos imperdíveis protagonizados por gatos.</a
+            >
+          </aside>
 
-          <iframe
-            width="383"
-            height="315"
-            src="https://www.youtube.com/embed/seGW4vdfL7A?si=sjqxpwmvWstJj1Kd"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <aside class="sticky-aside">
+            <img src="./src/images/sega.png" alt="site gama vicío" />
+            <a href="https://www.gamevicio.com/noticias/2025/08/xbox-nova-sega/"
+              >Xbox é visto como nova Sega, diz ex-chefe do PlayStation.</a
+            >
+          </aside>
+
+          <aside class="sticky-aside">
+            <img src="./src/images/mundo.png" alt="site mundo dos jogos" />
+            <a
+              href="https://mundodosjogos.org/hollow-knight-silksong-jogavel-proximo-mes-gamescom/"
+              >Hollow Knight: Silksong terá jogabilidade liberada no próximo mês
+              durante a Gamescom!</a
+            >
+          </aside>
+
+          <div class="conteudo"></div>
+        </section>
+        <div id="jogos">
+          <article class="gradiente dir jogo" data-categoria="Metroidvania">
+            <div>
+              <img src="./src/images/blasphemous.png" alt="blasphemous" /><a
+                href="https://youtu.be/seGW4vdfL7A?si=93snXALmUISKrvmP"
+                target="_blank"
+                >Blasphemous</a
+              >
+              <p>
+                Blasphemous é um jogo de ação e aventura com elementos de
+                Metroidvania, ambientado no mundo sombrio e cruel de Cvstodia,
+                onde o "Milagre", uma força divina, manifesta-se de maneiras
+                tanto bênçãos quanto maldições. O jogador assume o papel do
+                Penitente, o único sobrevivente de um massacre, que desperta em
+                um ciclo de morte e renascimento, e deve embarcar em uma jornada
+                para libertar o mundo desse terrível destino.
+              </p>
+
+              <iframe
+                width="383"
+                height="315"
+                src="https://www.youtube.com/embed/seGW4vdfL7A?si=sjqxpwmvWstJj1Kd"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+
+              <img
+                width="5"
+                height="5"
+                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
+                alt="play-station--v1"
+              />
+            </div>
+          </article>
+
+          <article class="gradiente esq jogo" data-categoria="Plataforma">
+            <div>
+              <img src="./src/images/inmost.png" alt="Inmost" /><a href=""
+                >Inmost</a
+              >
+              <p>
+                INMOST é um jogo de plataforma atmosférico com quebra-cabeças e
+                uma forte componente narrativa. A história acompanha três
+                personagens com estilos de jogo distintos em um conto sombrio
+                interconectado: Uma menina, um cavaleiro e um homem em busca de
+                respostas. Os jogadores exploram um castelo abandonado,
+                enfrentando inimigos, resolvendo quebra-cabeças e usando
+                armadilhas para sobreviver.
+              </p>
+
+              <iframe
+                width="383"
+                height="315"
+                src="https://www.youtube.com/embed/VhVEgxwmlXg?si=j5YqTxgYfBiEYdp_"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </article>
+
+          <article class="gradiente dir jogo" data-categoria="RPG">
+            <div>
+              <img src="./src/images/undertale.png" alt="Undertale" /><a href=""
+                >Undertale</a
+              >
+              <p>
+                Undertale é um RPG eletrônico indie onde o jogador controla uma
+                criança que cai no subterrâneo, um mundo habitado por monstros.
+                O objetivo principal é encontrar um caminho de volta à
+                superfície, enfrentando desafios e, opcionalmente, tomando
+                decisões morais sobre como lidar com os monstros.
+              </p>
+
+              <iframe
+                width="383"
+                height="315"
+                src="https://www.youtube.com/embed/1Hojv0m3TqA?si=BZQkkmDQ4H8E7BLi"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
+                alt="play-station--v1"
+              />
+            </div>
+          </article>
+
+          <article class="gradiente esq jogo" data-categoria="Metroidvania">
+            <div>
+              <img src="./src/images/hollow.png" alt="Hollow Knight" /><a
+                href=""
+                >Hollow Knight</a
+              >
+
+              <p>
+                Hollow Knight é um jogo de ação e aventura 2D estilo
+                Metroidvania, onde um cavaleiro sem nome explora o reino de
+                Hallownest, assolado por uma infecção sobrenatural. O jogador
+                desvenda os mistérios do reino, enfrenta criaturas infectadas e
+                chefes desafiadores, desbloqueando novas habilidades e
+                habilidades ao longo do caminho. O jogo se destaca por sua
+                atmosfera gótica, narrativa sutil e mundo rico em detalhes, com
+                muitos segredos a serem descobertos.
+              </p>
+
+              <iframe
+                width="383"
+                height="315"
+                src="https://www.youtube.com/embed/UAO2urG23S4?si=pgvgCTOcpBL9mEkg"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
+                alt="play-station--v1"
+              />
+            </div>
+          </article>
+
+          <article class="gradiente dir jogo" data-categoria="RPG">
+            <div>
+              <img src="./src/images/expedition.jpg" alt="Clair Obscur" /><a
+                href=""
+                >Clair Obscur: Expedition 33</a
+              >
+              <p>
+                Clair Obscur: Expedition 33 é um RPG de ação que se passa em um
+                mundo onde uma entidade chamada "A Artífice" apaga pessoas de
+                acordo com um número pintado por ela. A Expedição 33, da qual o
+                jogo deriva seu nome, é a última tentativa de impedir que essa
+                entidade continue a apagar pessoas, com o número atual a ser o
+                de pessoas com 33 anos.
+              </p>
+
+              <iframe
+                width="383"
+                height="315"
+                src="https://www.youtube.com/embed/2VaLOc1FpSo?si=abvt69sLF-pAz2_4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
+                alt="play-station--v1"
+              />
+            </div>
+          </article>
+
+          <article class="gradiente esq jogo" data-categoria="Soulslike">
+            <div>
+              <img src="./src/images/elden.jpg" alt="Elden Ring" /><a href=""
+                >Elden Ring</a
+              >
+
+              <p>
+                Elden Ring é um RPG de ação em mundo aberto desenvolvido pela
+                FromSoftware, conhecido por seus jogos desafiadores como Dark
+                Souls, Bloodborne e Sekiro. O jogo se passa nas Terras
+                Intermédias, um reino onde a Ordem Áurea foi quebrada e o Elden
+                Ring foi destruído, espalhando seus fragmentos entre vários
+                semideuses. O jogador assume o papel de um "Emaculado", um
+                exilado convocado de volta para as Terras Intermédias com o
+                objetivo de se tornar o Elden Lord e restaurar a ordem,
+                consertando o Elden Ring.
+              </p>
+
+              <iframe
+                width="383"
+                height="315"
+                src="https://www.youtube.com/embed/E3Huy2cdih0?si=h329BvTxCW89QnPp"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
+                alt="play-station--v1"
+              />
+            </div>
+          </article>
+
+          <article class="gradiente dir jogo" data-categoria="Terror">
+            <div>
+              <img src="./src/images/frame.jpg" /><a href=""
+                >Fatal Frame: Maiden Of Black Water</a
+              >
+              <p>
+                "Fatal Frame: Maiden Of Black Water" é um jogo de terror que se
+                passa na fictícia Montanha Hikami, um local onde ocorrem muitos
+                incidentes e onde as pessoas vão para morrer. A história segue
+                três protagonistas - Yuri Kozukata, Miu Hinasaki e Ren Hojo -
+                que são atraídos para a montanha e envolvidos em eventos
+                sobrenaturais. Eles usam a Camera Obscura, uma câmera com
+                poderes especiais, para investigar e combater fantasmas
+                vingativos.
+              </p>
+
+              <iframe
+                width="383"
+                height="315"
+                src="https://www.youtube.com/embed/BWDpyxB-dQQ?si=jeW00-Pb_hQXRpeR"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
+                alt="play-station--v1"
+              />
+            </div>
+          </article>
+
+          <article class="gradiente esq jogo" data-categoria="Soulslike">
+            <div>
+              <img src="./src/images/nioh.jpg" /><a href="">Nioh</a>
+              <p>
+                Nioh é um RPG de ação ambientado no Japão feudal, durante o
+                período Sengoku, marcado por guerras civis. O jogador assume o
+                papel de William, um espadachim irlandês, que luta contra yokai
+                (demônios) e clãs rivais, enquanto busca vingança contra o
+                alquimista Edward Kelley. O jogo combina elementos históricos
+                com fantasia sombria e oferece combates intensos e desafiadores,
+                inspirados em Dark Souls e Ninja Gaiden.
+              </p>
+
+              <iframe
+                width="383"
+                height="315"
+                src="https://www.youtube.com/embed/WsXnJUP99jc?si=nwV1kuXsVTa7h9fY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
+                alt="play-station--v1"
+              />
+            </div>
+          </article>
+
+          <article class="gradiente dir jogo" data-categoria="Luta">
+            <div>
+              <img src="./src/images/mk11.jpg" /><a href="">Mortal Kombat 11</a>
+              <p>
+                Mortal Kombat 11 é um jogo de luta que dá continuidade à
+                história iniciada em Mortal Kombat X, com foco em manipulação
+                temporal e o confronto entre personagens clássicos e suas
+                versões mais jovens, tudo orquestrado por Kronika, a guardiã do
+                tempo. O jogo introduz novos personagens como Geras, que
+                manipula a areia, e Cetrion, uma deusa elemental, além de
+                explorar os eventos que levaram à quebra do equilíbrio do
+                universo, após Raiden matar Shinnok. O modo história apresenta
+                múltiplos finais, dependendo das escolhas do jogador, e inclui
+                uma "Cripta" para exploração e desbloqueio de itens e áreas.
+              </p>
+
+              <iframe
+                width="383"
+                height="315"
+                src="https://www.youtube.com/embed/YUu77vYUoWo?si=59egrJlQ9cYxfIv-"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
+                alt="play-station--v1"
+              />
+            </div>
+          </article>
+
+          <article class="gradiente esq jogo" data-categoria="Luta">
+            <div>
+              <img src="./src/images/sifu.jpg" /><a href="">Sifu</a>
+              <p>
+                Sifu é um jogo de luta e ação em terceira pessoa, focado em
+                combate corpo a corpo, onde o jogador controla um jovem
+                estudante de Kung Fu que busca vingança pela morte de seu pai,
+                um mestre de artes marciais. O jogo se destaca por sua mecânica
+                de envelhecimento, onde o personagem principal revive cada vez
+                que morre, mas com um custo: ele envelhece e perde vida útil a
+                cada ressurgimento. A história se desenrola com o protagonista
+                enfrentando diversos inimigos e explorando diferentes locais da
+                cidade, como boates, galerias e prédios de escritórios, em busca
+                dos responsáveis pela morte de seu pai.
+              </p>
+
+              <iframe
+                width="383"
+                height="315"
+                src="https://www.youtube.com/embed/1FQ1YO3Ks2U?si=p0C4V4HFhsrjxeVW"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
+                alt="play-station--v1"
+              />
+            </div>
+          </article>
+
+          <article class="gradiente dir jogo" data-categoria="Hacknslash">
+            <div>
+              <img src="./src/images/dmc5.jpeg" /><a href="">Devil May Cry 5</a>
+              <p>
+                Devil May Cry 5 é um jogo de ação que se passa alguns anos após
+                Devil May Cry 4. A história acompanha Nero e Dante, que precisam
+                unir forças para impedir o rei demônio Urizen de destruir Red
+                Grave City. Além deles, um novo personagem, V, também se junta à
+                luta com seus próprios estilos de combate.
+              </p>
+
+              <iframe
+                width="383"
+                height="315"
+                src="https://www.youtube.com/embed/dG6_CAdiLPM?si=l2r7HoFUE7hLK0_x"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+
+              <img
+                width="20"
+                height="20"
+                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
+                alt="play-station--v1"
+              />
+            </div>
+          </article>
         </div>
-      </article>
-
-      <article class="gradiente esq jogo" data-categoria="Plataforma">
-        <div>
-          <img src="./src/images/inmost.png" /><a href="">Inmost</a>
-          <p>
-            INMOST é um jogo de plataforma atmosférico com quebra-cabeças e uma
-            forte componente narrativa. A história acompanha três personagens
-            com estilos de jogo distintos em um conto sombrio interconectado:
-            Uma menina, um cavaleiro e um homem em busca de respostas. Os
-            jogadores exploram um castelo abandonado, enfrentando inimigos,
-            resolvendo quebra-cabeças e usando armadilhas para sobreviver.
-          </p>
-
-          <iframe
-            width="383"
-            height="315"
-            src="https://www.youtube.com/embed/VhVEgxwmlXg?si=j5YqTxgYfBiEYdp_"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </article>
-
-      <article class="gradiente dir jogo" data-categoria="RPG">
-        <div>
-          <img src="./src/images/undertale.png" /><a href="">Undertale</a>
-          <p>
-            Undertale é um RPG eletrônico indie onde o jogador controla uma
-            criança que cai no subterrâneo, um mundo habitado por monstros. O
-            objetivo principal é encontrar um caminho de volta à superfície,
-            enfrentando desafios e, opcionalmente, tomando decisões morais sobre
-            como lidar com os monstros.
-          </p>
-
-          <iframe
-            width="383"
-            height="315"
-            src="https://www.youtube.com/embed/1Hojv0m3TqA?si=BZQkkmDQ4H8E7BLi"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </article>
-
-      <article class="gradiente esq jogo" data-categoria="Metroidvania">
-        <div>
-          <img src="./src/images/hollow.png" /><a href="">Hollow Knight</a>
-
-          <p>
-            Hollow Knight é um jogo de ação e aventura 2D estilo Metroidvania,
-            onde um cavaleiro sem nome explora o reino de Hallownest, assolado
-            por uma infecção sobrenatural. O jogador desvenda os mistérios do
-            reino, enfrenta criaturas infectadas e chefes desafiadores,
-            desbloqueando novas habilidades e habilidades ao longo do caminho. O
-            jogo se destaca por sua atmosfera gótica, narrativa sutil e mundo
-            rico em detalhes, com muitos segredos a serem descobertos.
-          </p>
-
-          <iframe
-            width="383"
-            height="315"
-            src="https://www.youtube.com/embed/UAO2urG23S4?si=pgvgCTOcpBL9mEkg"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </article>
-
-      <article class="gradiente dir jogo" data-categoria="RPG">
-        <div>
-          <img src="./src/images/expedition.jpg" /><a href=""
-            >Clair Obscur: Expedition 33</a
-          >
-          <p>
-            Clair Obscur: Expedition 33 é um RPG de ação que se passa em um
-            mundo onde uma entidade chamada "A Artífice" apaga pessoas de acordo
-            com um número pintado por ela. A Expedição 33, da qual o jogo deriva
-            seu nome, é a última tentativa de impedir que essa entidade continue
-            a apagar pessoas, com o número atual a ser o de pessoas com 33 anos.
-          </p>
-
-          <iframe
-            width="383"
-            height="315"
-            src="https://www.youtube.com/embed/2VaLOc1FpSo?si=abvt69sLF-pAz2_4"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </article>
-
-      <article class="gradiente esq jogo" data-categoria="Soulslike">
-        <div>
-          <img src="./src/images/elden.jpg" /><a href="">Elden Ring</a>
-
-          <p>
-            Elden Ring é um RPG de ação em mundo aberto desenvolvido pela
-            FromSoftware, conhecido por seus jogos desafiadores como Dark Souls,
-            Bloodborne e Sekiro. O jogo se passa nas Terras Intermédias, um
-            reino onde a Ordem Áurea foi quebrada e o Elden Ring foi destruído,
-            espalhando seus fragmentos entre vários semideuses. O jogador assume
-            o papel de um "Emaculado", um exilado convocado de volta para as
-            Terras Intermédias com o objetivo de se tornar o Elden Lord e
-            restaurar a ordem, consertando o Elden Ring.
-          </p>
-
-          <iframe
-            width="383"
-            height="315"
-            src="https://www.youtube.com/embed/E3Huy2cdih0?si=h329BvTxCW89QnPp"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </article>
-
-      <article class="gradiente dir jogo" data-categoria="Terror">
-        <div>
-          <img src="./src/images/frame.jpg" /><a href=""
-            >Fatal Frame: Maiden Of Black Water</a
-          >
-          <p>
-            "Fatal Frame: Maiden Of Black Water" é um jogo de terror que se
-            passa na fictícia Montanha Hikami, um local onde ocorrem muitos
-            incidentes e onde as pessoas vão para morrer. A história segue três
-            protagonistas - Yuri Kozukata, Miu Hinasaki e Ren Hojo - que são
-            atraídos para a montanha e envolvidos em eventos sobrenaturais. Eles
-            usam a Camera Obscura, uma câmera com poderes especiais, para
-            investigar e combater fantasmas vingativos.
-          </p>
-
-          <iframe
-            width="383"
-            height="315"
-            src="https://www.youtube.com/embed/BWDpyxB-dQQ?si=jeW00-Pb_hQXRpeR"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </article>
       </div>
     </main>
 
@@ -256,3 +480,10 @@
     <script src="./src/js/index.js"></script>
   </body>
 </html>
+
+<img
+  width="20"
+  height="20"
+  src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
+  alt="play-station--v1"
+/>
