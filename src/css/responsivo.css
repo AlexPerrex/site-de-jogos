@@ -1,14 +1,42 @@
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   html {
     width: 100%;
     min-height: 100vh;
   }
 
-  h1 {
-    font-size: 24px;
+  body {
+    padding-top: 90px ;
+    margin:10px auto;
   }
   .menu {
-    height: 125px;
+    position: fixed;
+    top: 0;
+    height: 90px;
+    background-color: black;
+    z-index: 99;
+  }
+
+  .comeco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .slogan {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+    top: 10px;
+  }
+
+  nav a {
+    position: relative;
+    top: -20px;
+    font-size: 15px;
+    
   }
 
   .menu nav {
@@ -20,9 +48,15 @@
     display: inline-block;
   }
 
+  .jogos{
+    padding-top: 90px;
+  }
+
+  .todos-jogos {
+    padding-top: 90px;
+  }
+
   .gradiente {
-    display: flex;
-    flex-wrap: wrap;
     width: 95%;
     margin: 20px auto;
   }
@@ -34,31 +68,51 @@
   }
 
   .filtros {
-    display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 5px;
-    margin-bottom: 50px;
+    justify-content: center;
+    height: 150px;
+   margin: 50px auto;
+   padding-top: 90px;
+   gap: 50px;
   }
+
+  .filtros .btn-filtrar {
+    width: 100px;
+    margin-top: 20%;
+  }
+
+
 
   .filtros .categorias-jogos,
   .filtros .btn-filtrar {
-    width: 65%;
+    width: 50vw;
     height: 5vh;
     letter-spacing: 2px;
   }
 
+
+
   .container-noticias {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
     height: 700px;
     width: 100%;
     margin: 20px auto;
+    padding-top: 91px;
+     transition: all 0.5s ease;
+     order: 999;
   }
 
   .container-noticias h3 {
     margin: auto;
   }
+
+  .esconder {
+  display: none;
+}
+
+.mostrar {
+  display: block;
+}
+
 
 }

@@ -24,7 +24,7 @@
   </head>
   <body>
     <header class="menu">
-      <h1 class="orbitron pixel-anim">ExpGaming Room</h1>
+      <h1 class="orbitron pixel-anim"><a href="#">ExpGaming Room</a></h1>
       <nav>
         <ul class="alinhamento-menu">
           <li><a href="#jogos">jogos</a></li>
@@ -34,15 +34,15 @@
       </nav>
     </header>
 
-    <main>
+    <main class="comeco">
       <section class="selecao">
         <figure>
           <img src="./src/images/logo.png" alt="Logo do site" class="logo" />
-          <figcaption>O Universo Gamer Em Um Só Lugar</figcaption>
+          <figcaption class="slogan">O Universo Gamer Em Um Só Lugar</figcaption>
         </figure>
       </section>
 
-      <div class="filtros">
+      <div class="filtros" id="categorias">
         <div class="categorias-jogos">
           <label for="categoria">Categoria</label>
           <select id="categoria" class="categoria">
@@ -56,7 +56,9 @@
             <option value="hacknslash">Hack n slash</option>
           </select>
         </div>
+        <div class="btn">
         <button class="btn-filtrar">Aplicar filtros</button>
+        </div>
       </div>
 
       <div class="jogos">
@@ -87,7 +89,9 @@
 
           <div class="conteudo"></div>
         </section>
-        <div id="jogos">
+      
+      
+        <div class="todos-jogos" id="jogos">
           <article class="gradiente dir jogo" data-categoria="Metroidvania">
             <div>
               <img src="./src/images/blasphemous.png" alt="blasphemous" /><a
@@ -115,13 +119,6 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-
-              <img
-                width="5"
-                height="5"
-                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
-                alt="play-station--v1"
-              />
             </div>
           </article>
 
@@ -176,13 +173,6 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-
-              <img
-                width="20"
-                height="20"
-                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
-                alt="play-station--v1"
-              />
             </div>
           </article>
 
@@ -214,13 +204,6 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-
-              <img
-                width="20"
-                height="20"
-                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
-                alt="play-station--v1"
-              />
             </div>
           </article>
 
@@ -249,13 +232,6 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-
-              <img
-                width="20"
-                height="20"
-                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
-                alt="play-station--v1"
-              />
             </div>
           </article>
 
@@ -287,13 +263,6 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-
-              <img
-                width="20"
-                height="20"
-                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
-                alt="play-station--v1"
-              />
             </div>
           </article>
 
@@ -323,13 +292,6 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-
-              <img
-                width="20"
-                height="20"
-                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
-                alt="play-station--v1"
-              />
             </div>
           </article>
 
@@ -356,13 +318,6 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-
-              <img
-                width="20"
-                height="20"
-                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
-                alt="play-station--v1"
-              />
             </div>
           </article>
 
@@ -392,13 +347,6 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-
-              <img
-                width="20"
-                height="20"
-                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
-                alt="play-station--v1"
-              />
             </div>
           </article>
 
@@ -428,13 +376,6 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-
-              <img
-                width="20"
-                height="20"
-                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
-                alt="play-station--v1"
-              />
             </div>
           </article>
 
@@ -459,16 +400,11 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-
-              <img
-                width="20"
-                height="20"
-                src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
-                alt="play-station--v1"
-              />
             </div>
           </article>
         </div>
+
+          
       </div>
     </main>
 
@@ -480,10 +416,3 @@
     <script src="./src/js/index.js"></script>
   </body>
 </html>
-
-<img
-  width="20"
-  height="20"
-  src="https://img.icons8.com/fluency/20/ffffff/play-station--v1.png"
-  alt="play-station--v1"
-/>
